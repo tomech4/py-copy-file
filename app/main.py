@@ -1,7 +1,7 @@
 def copy_file(command: str) -> None:
     try:
         arguments = command.split(" ")
-        if len(arguments) < 3:
+        if len(arguments) != 3:
             return None
 
         cmd = arguments[0]
